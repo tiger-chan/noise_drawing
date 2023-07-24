@@ -1,0 +1,8 @@
+[base_fractal]
+fractal = { octaves = 2, frequency = 1.0, interp = "quintic", fractal = "fbm", cached = true }
+
+[fractal_scaled]
+scale_offset = {source = "base_fractal", offset = 0.5, scale = 0.5 }
+
+[main]
+selector = { condition = "fractal_scaled", lower = 0, upper = "fractal_scaled", threshold = 0.35}

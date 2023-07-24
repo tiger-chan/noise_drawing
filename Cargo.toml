@@ -6,3 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4.26"
+ferro_noise = { git = "https://github.com/tiger-chan/ferro_noise.git", version = "*" }
+#ferro_noise = { path = "../ferro_noise" }
+image = "0.24.6"
